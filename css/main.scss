@@ -66,11 +66,6 @@ p {
       height: 44px;
     }
   }
-  .contact-panel {
-    max-width: 100%;
-    // flex-basis: calc((100% - 2 * 8px) / 3);
-    flex-basis: calc((100% - 2 * 30px) / 3);
-  }
 }
 .contact-panel {
   width: 100%;
@@ -135,7 +130,7 @@ p {
     color: #907e82;
     font-size: 12px;
     display: block;
-    padding-top: 25px;
+
     line-height: 1.5;
   }
   &__tel {
@@ -143,5 +138,33 @@ p {
     color: #907e82;
     font-size: 12px;
     line-height: 1.5;
+    margin-top: 25px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .contact-panel {
+    max-width: 100%;
+    // flex-basis: calc((100% - 2 * 8px) / 3);
+    flex-basis: calc((100% - 2 * 30px) / 3);
+    &__label {
+      font-size: 16px;
+    }
+    &__place {
+      font-size: 14px;
+    }
+    &__description {
+      font-size: 14px;
+      line-height: 1.64;
+    }
+    &__days {
+      font-size: 14px;
+    }
+    &__hours {
+      font-size: 14px;
+    }
+    &__mail,
+    &__tel {
+      font-size: 14px;
+    }
   }
 }
